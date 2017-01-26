@@ -29,7 +29,6 @@ function doSort (numbers, callback) {
 		// Get the value in the current index
 		var current = parseInt(numbers[i]);
 		// Get the value in the next index (if available)
-		//var next = i < numbers.length - 1 ? parseInt(numbers[i + 1]) : null;
 		var next = numbers[i + 1] != null ? parseInt(numbers[i + 1]) : null;
 		// Check if there is another value to sort and if the current value is bigger than the next value
 		// This is the core of the Bubble Sort
