@@ -1,5 +1,3 @@
-# general
-
 # ArrayOfObjectsFilter Usage
 The filterInfo parameter is an array of objects containing the FilterField and FilterValues properties to filter the data
 
@@ -12,3 +10,4 @@ var filterInfo = [
 ];
 filterData(filterInfo);
 ```
+This utility script also comes with JasmineJS test cases
