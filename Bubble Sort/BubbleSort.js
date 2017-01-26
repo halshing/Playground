@@ -8,15 +8,18 @@ function init () {
 	var count = document.querySelector("#count").value;
 	// Get random number between min and max
 	var randomNumbers = getRandomNumbers(min, max, count);
-	
+	// Get results container
+	var resultsContainer = document.querySelector("#results");
 	// Sort the numbers using Bubble Sort!
-	var sorted = doSort(randomNumbers);
+	doSort(randomNumbers.slice(0), function (sorted) {
+		resultsContainer.innerHTML = "<p style='font-weight:bold'>Original: " + randomNumbers + "</p><p style='font-weight:bold'>Sorted: " + sorted + "</p>";
+	});
 
-	console.log(sorted);
+	
 }
 
 // Do the Bubble Sort!
-function doSort (numbers) {
+function doSort (numbers, callback) {
 	// Track if we should keep sorting
 	var flag = false;
 	// Loop through the numbers
@@ -38,8 +41,8 @@ function doSort (numbers) {
 		}
 	}
 	if (flag)
-		doSort(numbers);
-	return numbers;
+		doSort(numbers, callback);
+	callback(numbers);
 }
 
 // Get random array
@@ -48,7 +51,6 @@ function getRandomNumbers (min, max, count) {
 	for (var i = 0; i < count; i++) {
 		arr.push(getRandomNum(min, max));
 	}
-	arr.push(0);
 	return arr;
 }
 
