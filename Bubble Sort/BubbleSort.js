@@ -33,7 +33,7 @@ function doSort (numbers, callback) {
 		var next = numbers[i + 1] != null ? parseInt(numbers[i + 1]) : null;
 		// Check if there is another value to sort and if the current value is bigger than the next value
 		// This is the core of the Bubble Sort
-		if (next != null && current > next) {
+		if (next != null && next < current) {
 			// Let's do the switch-a-roo!
 			var currentVal = numbers[i];
 			var nextVal = numbers[i + 1];
