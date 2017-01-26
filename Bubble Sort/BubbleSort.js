@@ -12,7 +12,9 @@ function init () {
 	var resultsContainer = document.querySelector("#results");
 	// Sort the numbers using Bubble Sort!
 	doSort(randomNumbers.slice(0), function (sorted) {
-		resultsContainer.innerHTML = "<p style='font-weight:bold'>Original: " + randomNumbers + "</p><p style='font-weight:bold'>Sorted: " + sorted + "</p>";
+		resultsContainer.innerHTML = "" + 
+		"<p style='font-weight:bold'>Original: " + randomNumbers + "</p>" + 
+		"<p style='font-weight:bold'>Sorted: " + sorted + "</p>";
 	});
 
 	
