@@ -1229,8 +1229,8 @@ var dataResult = {
     TestCase1: {
         Description: "should give me States matching VA",
         Filters: [{
-            "FilterField": "State",
-            "FilterValues": ["VA"]
+            "Field": "State",
+            "Values": ["VA"]
         }],
         ExpectedData: [{
             "ID": 5,
@@ -1270,11 +1270,11 @@ var dataResult = {
     TestCase2: {
         Description: "should give me States matching VA and Cities matching Rote",
         Filters: [{
-            "FilterField": "State",
-            "FilterValues": ["VA"]
+            "Field": "State",
+            "Values": ["VA"]
         }, {
-            "FilterField": "City",
-            "FilterValues": ["Rote"]
+            "Field": "City",
+            "Values": ["Rote"]
         }],
         ExpectedData: [{
             "ID": 63,
@@ -1292,8 +1292,8 @@ var dataResult = {
     TestCase3: {
         Description: "should give me States matching VA and CO",
         Filters: [{
-            "FilterField": "State",
-            "FilterValues": ["VA", "CO"]
+            "Field": "State",
+            "Values": ["VA", "CO"]
         }],
         ExpectedData: [{
             "ID": 63,
@@ -1355,11 +1355,11 @@ var dataResult = {
     TestCase4: {
         Description: "should give me States matching VA and CO and Cities matching Sameville",
         Filters: [{
-            "FilterField": "State",
-            "FilterValues": ["VA", "CO"]
+            "Field": "State",
+            "Values": ["VA", "CO"]
         }, {
-            "FilterField": "City",
-            "FilterValues": ["Sameville"]
+            "Field": "City",
+            "Values": ["Sameville"]
         }],
         ExpectedData: [{
             "ID": 100,
