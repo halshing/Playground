@@ -30,7 +30,6 @@ console.log(filtered);
   ]
 */
 ```
-This utility script also comes with JasmineJS test cases
 
 # BubbleSort
 Utility script that implements the bubble sort algorithm in JavaScript. The basic concept of bubble sort is switching values if the adjacent value is smaller. This loop continues recursively until no more values can be sorted.
