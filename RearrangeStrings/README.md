@@ -8,4 +8,4 @@ Given an array of equal-length strings, check if it is possible to rearrange the
 * For `inputArray = ["ab", "bb", "aa"]`, the output should be `stringRearrange(inputArray) = true;`
 
 ## Test Cases
-Launch the `index.html` file in the [TestCases](TestCases) folder to run the JasmineJS test cases.
+Launch the `index.html` file in the [TestCases](TestCases) folder in a web browser to run the JasmineJS test cases.
